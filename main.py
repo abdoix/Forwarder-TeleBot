@@ -15,12 +15,12 @@ def terminate_processes(signum, frame):
 signal.signal(signal.SIGINT, terminate_processes)
 
 # Run messageForwarder.py
-processes.append(subprocess.Popen(["py", "messageForwarder.py"]))
+processes.append(subprocess.Popen(["python3", "messageForwarder.py"]))
 
 time.sleep(5)
 
 # Run goldTradingGenius.py
-processes.append(subprocess.Popen(["py", "goldTradingGenius.py"]))
+processes.append(subprocess.Popen(["python3", "goldTradingGenius.py"]))
 
 # Wait forever
 while True:
