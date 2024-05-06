@@ -5,7 +5,8 @@ from telegram.ext import CallbackContext, MessageHandler, Filters, Updater
 import logging
 import time
 import re
-import MetaTrader5 as mt5
+# import MetaTrader5 as mt5
+from mt5linux import MetaTrader5 as mt5
 
 # logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
